@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Home</title>
+</head>
+<body>
+    <div class="container-principal">
+        <div class="area-cadastro">
+            <div class="container">
+                <h1>Cadastro</h1>
+                <form method="POST">
+                    <div class="area-input">
+                        <input type="text" placeholder="Nome">
+                    </div>
+                    <div class="area-input">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="area-input">
+                        <input type="password" placeholder="Senha">
+                    </div>
+                    <div class="area-input">
+                        <input type="password" placeholder="Confirmar senha">
+                    </div>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+        <div class="area-login">
+            <div class="container">
+                <h1>Login</h1>
+                <form method="POST">
+                    <div class="area-input">
+                        <input type="text" placeholder="Nome">
+                    </div>
+                    <div class="area-input">
+                        <input type="password" placeholder="Senha">
+                    </div>
+                    <button type="submit">Entrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="placa" class="placa activeLogin">
+        <div>
+            <h1>Bem-Vindo</h1>
+            <p>Seja bem vindo(a) a maior rede de produtos Agro do
+                Brasil</p>
+            <button id="btnPlaca">Fazer Cadastro</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: rgb(211, 231, 235);
+}
+.container-principal {
+  width: 70%;
+  height: 550px;
+  border-radius: 50px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-principal .area-cadastro,
+.container-principal .area-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+}
+.container {
+  text-align: center;
+  width: 70%;
+}
+.container h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #2e855f;
+  margin-bottom: 15px;
+}
+.container .area-input {
+  width: 100%;
+  height: 50px;
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 10px;
+}
+.container .area-input i {
+  font-size: 20px;
+  margin-right: 10px;
+  color: #2e855f;
+}
+.container .area-input input {
+  border: none;
+  background: none;
+  width: 100%;
+  font-weight: 600;
+  color: #2e855f;
+  outline: none;
+}
+.container form button {
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  background-color: none;
+  border: 2px solid #2e855f;
+  border-radius: 5px;
+  color: #2e855f;
+  cursor: pointer;
+  font-size: 17px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.container form button:hover {
+  /* o hover é a animação ao passar o mouse em cima do botão*/
+  background-color: #2e855f;
+  color: #fff;
+  transition: ease-in-out 0.2s;
+}
+.placa {
+  width: 35%;
+  height: 550px;
+  background-color: #2e855f;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+.placa h1 {
+  font-size: 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.placa p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ddd;
+}
+.placa button {
+  width: 150px;
+  height: 40px;
+  border-radius: 15px;
+  color: #fff;
+  background: none;
+  border: 2px solid #fff;
+  cursor: pointer;
+  transition: 0.3s;
+  outline: none;
+}
+.placa button:hover {
+  background-color: #fff;
+  color: #2e855f;
+  font-size: 100%;
+}
+.placa.activeCadastro {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  transform: translate3d(50%, 0px, 0px);
+  transition: 1s;
+}
+.placa.activeLogin {
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  transform: translate3d(-50%, 0px, 0px);
+  transition: 1s;
+}
